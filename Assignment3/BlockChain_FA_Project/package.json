@@ -1,0 +1,28 @@
+{
+  "name": "public-work-audit-blockchain",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Decentralized Public Work Audit & Fund Tracking — Hardhat + React",
+  "scripts": {
+    "compile": "hardhat compile",
+    "node": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:v2:local": "hardhat run scripts/deploy-v2.js --network localhost",
+    "deploy:hardhat": "hardhat run scripts/deploy.js --network hardhat",
+    "export-abi": "node scripts/export-abi.js",
+    "test": "hardhat test",
+    "test:v2": "hardhat test test/PublicWorkAuditV2.test.js",
+    "test:all": "hardhat test",
+    "setup-demo": "node scripts/setup-demo-data.js",
+    "frontend:dev": "npm run dev --prefix frontend",
+    "frontend:build": "npm run build --prefix frontend",
+    "full-setup": "npm run compile && npm run deploy:v2:local && npm run setup-demo"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}

@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply min-h-screen bg-ledger-950 text-slate-100 antialiased;
+  background-image: radial-gradient(ellipse 120% 80% at 50% -30%, rgba(34, 211, 238, 0.12), transparent),
+    linear-gradient(180deg, #020617 0%, #0a0f1a 40%, #020617 100%);
+}
+
+::selection {
+  @apply bg-cyan-500/30 text-white;
+}
+
+@layer utilities {
+  .glass {
+    @apply border border-white/10 bg-white/[0.03] backdrop-blur-xl;
+  }
+  .glass-strong {
+    @apply border border-cyan-500/20 bg-gradient-to-br from-white/[0.08] to-transparent backdrop-blur-2xl;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r from-cyan-300 via-emerald-300 to-cyan-400 bg-clip-text text-transparent;
+  }
+  .mesh-bg {
+    background-size: 48px 48px;
+    background-image: linear-gradient(to right, rgba(34, 211, 238, 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(34, 211, 238, 0.06) 1px, transparent 1px);
+  }
+}

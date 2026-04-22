@@ -1,22 +1,20 @@
 # Assignment 4: Decentralized File Storage with IPFS
 
-**Author:** Piyush Waghmare
+**Student Name:** Piyush Waghmare  
+**PRN Number:** 123B1B284  
+**Course Name:** Blockchain Lab
 
-## Overview
-Instead of storing large files directly on the blockchain (which is extremely expensive), this assignment implements decentralized file storage using the InterPlanetary File System (IPFS) via the Pinata API. 
+## Brief Description
+This assignment implements decentralized file storage using the InterPlanetary File System (IPFS). Instead of storing expensive data on-chain, we use Node.js scripts and the Pinata API to upload files to IPFS and retrieve them securely using a Content Identifier (CID).
 
-## Technologies Used
-* **Runtime Environment:** Node.js
-* **Storage Network:** IPFS
-* **IPFS Gateway/Provider:** Pinata
+## Tech Stack Used
+* **Runtime:** Node.js
+* **Storage:** IPFS
+* **Provider:** Pinata API
 * **Libraries:** `axios`, `form-data`, `fs`
 
-## Project Structure
-* `upload.js`: Script to read a local file (`sample.txt` or a PDF) and upload it to IPFS via Pinata.
-* `retrieve.js`: Script to fetch the file back from IPFS using its unique Content Identifier (CID).
-* `sample.txt`: The test file used for uploading.
-
-## Setup Instructions
-1. Initialize the Node project and install dependencies:
+## How to Run
+1. Open your terminal and navigate to the `Assignment4` folder: `cd Assignment4`.
+2. Install the required Node.js dependencies:
    ```bash
    npm install axios form-data fs

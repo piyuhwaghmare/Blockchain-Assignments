@@ -1,22 +1,23 @@
 # Assignment 2: Polygon Testnet Integration
 
-**Author:** Piyush Waghmare
+**Student Name:** Piyush Waghmare  
+**PRN Number:** 123B1B284 
+**Course Name:** Blockchain Lab
 
-## Overview
-To address the scalability issues and high gas fees of Ethereum mainnet/testnets, this assignment demonstrates migrating and deploying our smart contract to the Polygon network (Layer 2 scaling solution).
+## Brief Description
+To address Layer 1 scalability issues, this assignment demonstrates migrating and deploying our smart contract to the Polygon network. This highlights the benefits of Layer 2 solutions, specifically faster block times and significantly lower gas fees.
 
-## Technologies Used
-* **Blockchain:** Polygon Testnet (Amoy/Mumbai)
-* **Smart Contract:** Solidity
-* **Tools:** Remix IDE, MetaMask
+## Tech Stack Used
+* **Language:** Solidity
+* **Environment:** Remix IDE
+* **Network:** Polygon Testnet (Amoy/Mumbai)
+* **Wallet:** MetaMask
 
-## Objectives Achieved
-* Configured MetaMask to connect to the Polygon test network via custom RPC details.
-* Acquired test MATIC tokens from a Polygon Faucet.
-* Successfully deployed the smart contract to Polygon, observing significantly lower transaction fees and faster block confirmation times compared to Layer 1 networks.
-
-## Deployment Steps
-1. Add the Polygon Testnet to MetaMask (Network Name, RPC URL, Chain ID, Currency Symbol).
-2. Obtain test MATIC from the official faucet.
-3. In Remix IDE, select "Injected Provider - MetaMask" while connected to the Polygon network.
-4. Deploy the contract and verify the transaction on the Polygon block explorer.
+## How to Run
+1. Add the Polygon Testnet RPC details to your MetaMask wallet.
+2. Obtain test MATIC tokens from the official Polygon Faucet.
+3. Open [Remix IDE](https://remix.ethereum.org/) and prepare your contract.
+4. Compile the contract.
+5. In the "Deploy & Run Transactions" tab, select "Injected Provider - MetaMask".
+6. Verify MetaMask is connected to the Polygon network.
+7. Deploy the contract and confirm the transaction via MetaMask.

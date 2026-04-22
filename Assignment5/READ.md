@@ -1,25 +1,27 @@
- Assignment 5: `Assignment5/README.md`
+### 6. Assignment 5: `Assignment5/README.md`
 
 markdown
 # Assignment 5: Basic DAO Framework
 
-**Author:** Piyush Waghmare
+**Student Name:** Piyush Waghmare  
+**PRN Number:** 123B1B284 
+**Course Name:** Blockchain Lab
 
-## Overview
-This assignment explores decentralized governance by setting up a basic Decentralized Autonomous Organization (DAO) using a smart contract. It allows designated members to govern decisions transparently on-chain.
+## Brief Description
+This assignment explores decentralized governance by setting up a basic Decentralized Autonomous Organization (DAO). The smart contract acts as a framework that allows registered members to create proposals, vote on them, and execute decisions transparently on the blockchain.
 
-## Technologies Used
+## Tech Stack Used
 * **Language:** Solidity
-* **Development Framework:** Hardhat / Remix IDE
+* **Environment:** Remix IDE / Hardhat
+* **Wallet:** MetaMask
 
-## Core DAO Features
-* **Membership/Shares:** Tracks which addresses are part of the DAO and their voting weight.
-* **Proposal Creation:** Allows members to submit new proposals for the community to vote on.
-* **Voting Mechanism:** Members can cast "Yes" or "No" votes on active proposals within a specific timeframe.
-* **Execution:** If a proposal passes the required quorum and majority, the contract allows the proposed action to be executed automatically.
-
-## Deployment & Interaction
-1. Deploy the DAO contract, assigning initial shares/tokens to founding members.
-2. Use the contract interface to call `createProposal()`.
-3. Switch between different MetaMask accounts (representing different members) to call `vote()`.
-4. Once the voting period ends, call `executeProposal()` to finalize the outcome.
+## How to Run
+1. Open [Remix IDE](https://remix.ethereum.org/).
+2. Create a new file and paste the DAO smart contract code.
+3. Compile the contract using the Solidity Compiler.
+4. Go to the "Deploy & Run Transactions" tab and select your preferred environment (e.g., Remix VM for quick testing, or Injected Provider for testnet).
+5. Deploy the contract (passing any required constructor arguments like initial voting duration or member addresses).
+6. Use the deployed contract interface in Remix to:
+   * Call `createProposal()`
+   * Call `vote()` using different account addresses.
+   * Call `executeProposal()` once the voting period ends.
